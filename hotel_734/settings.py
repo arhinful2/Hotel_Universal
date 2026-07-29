@@ -43,7 +43,7 @@ ALLOWED_HOSTS = _split_csv_env(config(
 if config('VERCEL', default=False, cast=bool):
     ALLOWED_HOSTS.extend([
         '.vercel.app',
-        '.vercel.sh',
+        '.vercel.sh', 
     ])
 
 CSRF_TRUSTED_ORIGINS = [
